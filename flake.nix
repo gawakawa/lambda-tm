@@ -40,6 +40,7 @@
             dependencies = [
               "console"
               "effect"
+              "lists"
               "prelude"
             ];
 

@@ -3,6 +3,7 @@ module TuringMachine where
 import Prelude
 
 import Data.List (List(..))
+import Partial.Unsafe (unsafeCrashWith)
 
 data Direction = L | R | S
 
@@ -21,4 +22,4 @@ run :: forall s a. TM s a -> Tape a -> Boolean
 run = todo
 
 todo :: forall a. a
-todo = todo
+todo = unsafeCrashWith "Not implemented"
